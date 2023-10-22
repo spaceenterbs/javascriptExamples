@@ -6,7 +6,7 @@
 const member = {name: "방민식", age: 30}
 let id = Symbol('id'); // Symbol()을 이용하여 심볼 id를 생성한다.
 member[id] = 'msbang'; // 객체 member의 키 id에 문자열 'msbang'을 저장한다. 심볼 id가 객체의 키로 사용되면 심볼 데이터 형은 유일한 식별자이기 때문에 객체의 키 이름이 겹쳐서 충돌하는 경우를 방지할 수 있다.
-console.log(id)
+console.log(tipeof(id))
 
 document.write(member[id] + "<br>"); // 객체 member에서 심볼 id가 키로 사용된 요소는 member[id]에 의해 접근할 수 있다.
 document.write(typeof id + "<br>"); // 심볼 id의 데이터 형은 symbol이다.
