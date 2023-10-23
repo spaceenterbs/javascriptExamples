@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8"></head>
+  <body>
+    <script>
+let name = "방민식";
+let age = 30;
+let text = ""; // 변수 text에 Null 값, ""을 저장한다.
+
+text = text + "<table border='1'>"; // 문자열 연결 연산자를 이용하여 변수 text에 표와 관련된 <table> 태그들과 데이터를 삽입한다.
+text = text + "<tr><th>이름</th><th>나이</th></tr>";
+text = text + "<tr><td>" + name + "</td><td>" + age + "</td></tr>";
+text = text + "</table>"
+
+document.write(text);
+    </script>
+  </body>
+</html>
